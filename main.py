@@ -1,5 +1,9 @@
 # Exercise 3
+from pathlib import Path
+# import functions from utils here
 
+data_dir = Path("data")
+output_dir = Path("solution")
 
 # 1. Contstruct the path to the text file in the data directory using the `pathlib` module [2P]
 
