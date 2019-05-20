@@ -1,3 +1,4 @@
+#linux
 import utils
 
 with open("./data/cars.txt", "r") as file:

@@ -18,13 +18,13 @@ base_dir = "C:/Users/hans/Documents/PythonKursGit/exercise-3-schnell7/"
 with open(data_dir +"\cars.txt", "r") as file:
     lines = file.readlines()
     
-print(lines)
+#print(lines)
 #%%
 # 3. Count the occurences of each item in the text file [2P]
 count = utils.count_type(lines)
 #%%
 # 4. Using `pathlib` check if a directory with name `solution` exists and if not create it [2P]
-Path('C:/Users/hans/Documents/PythonKursGit/exercise-3-schnell7/solutions').mkdir(parents=True, exist_ok=False) 
+Path('C:/Users/hans/Documents/PythonKursGit/exercise-3-schnell7/solutions').mkdir(parents=True, exist_ok=True) 
 
 # 5. Write the counts to the file `counts.csv` in the `solution` directory in the format (first line is the header): [2P]
 #    item, count
@@ -35,7 +35,7 @@ Path('C:/Users/hans/Documents/PythonKursGit/exercise-3-schnell7/solutions').mkdi
 single = list(set(lines))
 #%%
 
-with open(base_dir + "\solutions\count.csv", "w") as file:
+with open(base_dir + "\solutions\count_test_anacondaprompt.csv", "w") as file:
     file.write('Type;count\n' )
     if len(count) == len(single):
         for i in range(len(count)):
