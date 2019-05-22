@@ -40,4 +40,4 @@ with open(base_dir + "\solutions\count_test_anacondaprompt.csv", "w") as file:
     if len(count) == len(single):
         for i in range(len(count)):
             #file.write(str(res[i]) + ";" + single[i])
-            file.writelines(single[i][:-2] + ";" + str(count[i]) +"\n")
+            file.writelines(single[i].rstrip("\n") + ";" + str(count[i]) +"\n")
